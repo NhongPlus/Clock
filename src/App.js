@@ -1,24 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Navigation from './components/NavigationMenu/Navigation';
+import MainContent from './components/MainContent/MainContent';
+import Content from './components/Content/Content';
+import Login from './components/Login/Login';
+import Lamp from './components/Lamp/lamp';
+import Money from './components/Money/Money';
+import UseEffect3 from './components/Effect/UseEffect';
+import DOMAccessExample from './components/DOM/domaccessExample.js';
 function App() {
+
+  const list = [
+    "menu1",
+    "menu2",
+    "menu3",
+  ]
+  const quantity = 5;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Money />
+      <DOMAccessExample/>
+      {/* <Header soluong={quantity}
+        menu={list}
+        name="haha đây là props nhá"
+        img="./logo.svg"
+        className="menu" />
+      <Navigation />
+      <main className='main'>
+        <Content text="content 1" />
+        <MainContent />
+        <Content text="content 2" />
+      </main> 
+      <Footer /> */}
+      <Login/>
+      <Lamp />
+    </>
   );
 }
 

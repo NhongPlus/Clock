@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.content{
+  padding: 20px;
+  background-color: #808080;
+}
+.header{
+  padding: 20px;
+  background-color: #808080;
+}
+.cart{
+  font-size: 60px;
+}
+.header__menu{
+  display: none;
+}
+.show{
+  display: block;
+}
